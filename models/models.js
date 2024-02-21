@@ -24,7 +24,7 @@ const userschema =new Schema({
         unique:true,
      },
      Skills:{
-        type:String,
+        type:Array,
         required:true,
      },
      desc:{

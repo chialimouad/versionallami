@@ -1,5 +1,6 @@
 const route=require('express').Router()
 const dbcontrol=require('../controller/controller')
+const dbq=require('../models/models')
 route.post('/register',dbcontrol.register)
 route.get('/fetch',async (req,res)=>{
     try{
