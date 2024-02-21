@@ -4,11 +4,8 @@ const cors =  require('cors')
 const useroute =require('./routes/routes')
 const app = express()
 app.use(bodyparser.json())
-app.use(bodyparser.raw())
-app.use(bodyparser.text())
+
 app.use(bodyparser.urlencoded({extended:true}))
 app.use('/',useroute)
-app.use(cors({origin:'https://versionallami.onrender.com/register',
-credentials:true,            //access-control-allow-credentials:true
-optionSuccessStatus:200}))
+app.use(cors())
 module.exports=app
