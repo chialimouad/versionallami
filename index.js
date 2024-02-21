@@ -8,7 +8,7 @@ app.use(bodyparser.raw())
 app.use(bodyparser.text())
 app.use(bodyparser.urlencoded({extended:true}))
 app.use('/',useroute)
-app.use(cors({origin:'mongodb+srv://chialimouad:mouadchiali@cluster0.z6qhktx.mongodb.net/test',
+app.use(cors({origin:'https://versionallami.onrender.com/register',
 credentials:true,            //access-control-allow-credentials:true
 optionSuccessStatus:200}))
 module.exports=app
