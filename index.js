@@ -8,7 +8,7 @@ app.use(bodyparser.raw())
 app.use(bodyparser.text())
 app.use(bodyparser.urlencoded({extended:true}))
 app.use('/',useroute)
-app.use(cors({origin:'http://localhost:5173',
+app.use(cors({origin:'http://localhost:3000',
 credentials:true,            //access-control-allow-credentials:true
 optionSuccessStatus:200}))
 module.exports=app
