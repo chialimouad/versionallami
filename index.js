@@ -8,5 +8,5 @@ app.use(bodyparser.raw())
 app.use(bodyparser.text())
 app.use(bodyparser.urlencoded({extended:true}))
 app.use('/',useroute)
-app.use(cors())
+app.use(cors({origin:'https://versionallami.onrender.com/register'}))
 module.exports=app
