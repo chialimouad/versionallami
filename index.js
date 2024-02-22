@@ -6,5 +6,5 @@ const app = express()
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:true}))
 app.use('/',useroute)
-app.use(cors({origin:"*",}))
+app.use(cors({origin:"https://k-linker-club.netlify.app/registration",}))
 module.exports=app
